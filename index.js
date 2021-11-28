@@ -157,20 +157,46 @@ devTeamLi.addEventListener('click', function(e) {
     
 }
 
-let events = ['Collection Drive','Kriti','Picnic 2019','Picnic 2020','Unleash the Talent']
-let circles = document.querySelectorAll('.circle');
+let events = ['Collection Drive','Kriti','Picnic 2019','Picnic 2020','Unleash the Talent'];
+
+
 let text = document.querySelector('.main-text-event')
 
-circles.forEach((ele,index) => {
+let prev = document.querySelector('.prev');
+let next = document.querySelector('.next');
+let ind = 0;
 
-    ele.addEventListener('click',()=>{
-        
-        text.textContent = events[index];
+next.addEventListener('click', () => {
+   
+    ind++;
 
-        let folder = events[index].split(" ").join("-");
-        console.log(folder);
+    if(ind > 4)
+    {
+        ind = 0;
+    }
 
-        setPhotos(folder);
+    console.log(ind);
+    
 
-    })
-})
+    text.textContent = events[ind];
+
+    let folder = events[ind].split(" ").join("-");
+
+     setPhotos(folder);
+});
+
+prev.addEventListener('click', () => {
+   
+    ind--;
+
+    if(ind < 0) {
+        ind = 4;
+    }
+    
+
+    text.textContent = events[ind];
+
+    let folder = events[ind].split(" ").join("-");
+
+     setPhotos(folder);
+});
