@@ -882,33 +882,38 @@ body {
   background-color: #f5f5f5;
 }
 
-.circle {
-  width: 1rem;
-  height: 1rem;
+.prev,.next{
+  width: 5rem;
+  height:2rem;
+  text-align: center;
   cursor: pointer;
   perspective: 1000px;
-  border-radius: 50%;
-  background-color: #393e46;
+  
+  /* background-color:rgba(0, 0, 0, 0.212); */
   margin: 1rem 0.9rem;
-  transition: transform 1s;
+  transition:transform 1s;
 }
 
-.circle:hover {
-  transform: scale(1.4);
+.prev:hover,.next:hover
+{
+  transform:scale(1.4)
 }
 
-@media screen and (max-width: 967px) {
-  .circle {
+@media screen and (max-width:967px)
+{
+  .prev,.next{
     width: 0.8rem;
     height: 0.8rem;
+    margin: 1rem 2rem;
   }
 }
 
-@media screen and (max-width: 514px) {
-  .circle {
+@media screen and (max-width:514px)
+{
+  .prev,.next {
     width: 0.5rem;
     height: 0.5rem;
-    margin: 1rem 0.6rem;
+    margin: 0rem 1rem 1rem 3rem;
   }
 }
 
