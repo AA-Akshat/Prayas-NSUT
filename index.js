@@ -129,7 +129,7 @@ devTeamLi.addEventListener('click', function(e) {
 
     if(index!=0 && index <= 14)
     {
-        ele.style.background = `url(./Images/Pics/Collection-Drive/gal-${index}.jpg)`;
+        ele.style.background = `url(./Images/Pics/Kriti/gal-${index}.jpg)`;
         ele.style.backgroundSize = `cover`;
         
         index++;
@@ -157,8 +157,7 @@ devTeamLi.addEventListener('click', function(e) {
     
 }
 
-let events = ['Collection Drive','Kriti','Picnic 2019','Picnic 2020','Unleash the Talent'];
-
+let events = ['Kriti','Collection Drive','Picnic 2019','Picnic 2020','Unleash the Talent'];
 
 let text = document.querySelector('.main-text-event')
 
