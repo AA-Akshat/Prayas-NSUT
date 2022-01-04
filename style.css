@@ -1020,7 +1020,7 @@ button {
   font-weight: 400;
   color: #aaaaaa;
 }
-.team .member .power1 {
+/* .team .member .power1 {
   background: #00adb5;
   color: white;
 }
@@ -1039,7 +1039,7 @@ button {
 }
 .team .member .power2 span {
   color: white;
-}
+} */
 #team {
   padding: 30px 0;
   overflow: hidden;
