@@ -1050,6 +1050,7 @@ button {
   position: relative;
 }
 #team .section-title h2 {
+  color:crimson;
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
